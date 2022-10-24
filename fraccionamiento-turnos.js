@@ -32,7 +32,7 @@ function main() {
     Math.trunc(lapso_disponibilidad / 60) + ":" + (lapso_disponibilidad % 60)
   );
   console.log("Cantidad de turnos: ", cantidad_turnos);
-  console.log("duracion_turno", duracion_turno);
+  console.log("duracion_turno: ", duracion_turno);
   console.log("Horarios de turnos: ", horarios_turnos);
 }
 
