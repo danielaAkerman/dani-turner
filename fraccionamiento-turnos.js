@@ -3,9 +3,9 @@ function main() {
   const inicio_disponibilidad = 630; // En minutos, 10:30 am
   const fin_disponibilidad = 760; // En minutos, 12:40 mediodía
   const lapso_disponibilidad = fin_disponibilidad - inicio_disponibilidad; // 130 mins
-  const cantidad_turnos = Math.trunc(lapso_disponibilidad / duracion_turno); // 6 turnos
-  var iteracion = 0;
+  const cantidad_turnos = Math.trunc(lapso_disponibilidad / duracion_turno); // 6 turnos y sobran 10 minutos
   const horarios_turnos = [];
+  var iteracion = 0;
   var horario_turno_actual = inicio_disponibilidad;
 
   horarios_turnos.push(
@@ -20,7 +20,7 @@ function main() {
     iteracion++;
   }
 
-//   Para ver:
+  //   Para ver:
 
   console.log(
     "Hora de inicio: ",
@@ -35,7 +35,7 @@ function main() {
     Math.trunc(lapso_disponibilidad / 60) + ":" + (lapso_disponibilidad % 60)
   );
   console.log("Cantidad de turnos: ", cantidad_turnos);
-  console.log("duracion_turno: ", duracion_turno);
+  console.log("Duracion del turno: ", duracion_turno);
   console.log("Horarios de turnos: ", horarios_turnos);
 
   return horarios_turnos;
