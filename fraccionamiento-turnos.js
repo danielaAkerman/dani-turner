@@ -2,8 +2,8 @@ function main() {
   const duracion_turno = 20; //minutos
   const inicio_disponibilidad = 630; // En minutos, 10:30 am
   const fin_disponibilidad = 760; // En minutos, 12:40 mediodía
-  const lapso_disponibilidad = fin_disponibilidad - inicio_disponibilidad; // 120 mins
-  const cantidad_turnos = lapso_disponibilidad / duracion_turno; // 6 turnos
+  const lapso_disponibilidad = fin_disponibilidad - inicio_disponibilidad; // 130 mins
+  const cantidad_turnos = Math.trunc(lapso_disponibilidad / duracion_turno); // 6 turnos
   var iteracion = 0;
   const horarios_turnos = [];
   var horario_turno_actual = inicio_disponibilidad;
