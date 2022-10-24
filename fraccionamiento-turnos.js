@@ -19,6 +19,9 @@ function main() {
     );
     iteracion++;
   }
+
+//   Para ver:
+
   console.log(
     "Hora de inicio: ",
     Math.trunc(inicio_disponibilidad / 60) + ":" + (inicio_disponibilidad % 60)
@@ -34,6 +37,8 @@ function main() {
   console.log("Cantidad de turnos: ", cantidad_turnos);
   console.log("duracion_turno: ", duracion_turno);
   console.log("Horarios de turnos: ", horarios_turnos);
+
+  return horarios_turnos;
 }
 
 main();
